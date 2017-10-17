@@ -726,7 +726,7 @@ public:
 			tf::Transform personP(tf::Quaternion(0,0,0,1), tf::Vector3((*sp_iter)->position_[0], (*sp_iter)->position_[1], (*sp_iter)->position_[2]));
 			try
 			{
-				brP_.sendTransform(tf::StampedTransform(personP, timeP,"/base_laser_link" , (*sp_iter)->person_name));
+				brP_.sendTransform(tf::StampedTransform(personP, timeP,"/base_link" , (*sp_iter)->person_name));
 
 			}catch (tf::TransformException ex){
 				ROS_ERROR("Broadcaster unavailable %s", ex.what());
