@@ -1,6 +1,6 @@
 # Ros-Project---Leg-Detect
 
-This is a edited version of cob_leg_detection (http://wiki.ros.org/cob_leg_detection) package. 
+This is an edited version of cob_leg_detection (http://wiki.ros.org/cob_leg_detection) package. 
 
 Run this package by writing the following command:
 
