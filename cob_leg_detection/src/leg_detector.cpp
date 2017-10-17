@@ -726,6 +726,7 @@ public:
 			tf::Transform personP(tf::Quaternion(0,0,0,1), tf::Vector3((*sp_iter)->position_[0], (*sp_iter)->position_[1], (*sp_iter)->position_[2]));
 			try
 			{
+				//publishing TF frames with "base_link" as their parent for any people detected in the scene
 				brP_.sendTransform(tf::StampedTransform(personP, timeP,"/base_link" , (*sp_iter)->person_name));
 
 			}catch (tf::TransformException ex){
